@@ -429,3 +429,38 @@ a.row{text-decoration:none;color:inherit}
 .perk-wrap{padding-bottom:20px}
 .perk-wrap .perk{margin-top:0}
 
+/* ---------- v3: site previews, iot tiers, 3d ---------- */
+a.wcard{text-decoration:none;color:inherit;transition:border-color .3s,transform .3s}
+a.wcard:hover{border-color:var(--ember)}
+.v-site{background:#0D0C0B;display:flex;flex-direction:column}
+.v-site .bar{flex:none;height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;background:var(--ink-3);border-bottom:1px solid var(--line)}
+.v-site .bar i{width:8px;height:8px;border-radius:50%;background:#3a3631}
+.v-site .bar i:first-child{background:var(--ember)}
+.v-site .bar span{margin-left:10px;font-family:var(--f-mono);font-size:10.5px;color:var(--ash);background:var(--ink);border:1px solid var(--line);border-radius:20px;padding:2px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.v-site .scr{position:relative;flex:1;min-height:0;overflow:hidden}
+.v-site .scr video,.v-site .scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.v-site .scr .vis{position:absolute;inset:0;aspect-ratio:auto}
+.visit{grid-column:1/-1;margin-top:14px;font-family:var(--f-mono);font-size:12px;color:var(--ember)}
+a.wcard:hover .visit{color:var(--ember-hi)}
+.tier{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:72px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.tier h3{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,3vw,34px);letter-spacing:-.03em}
+.tier .mono{font-size:12px;color:var(--ash)}
+.tier + .lab{margin-top:22px}
+.lvl.wide{margin-top:14px}
+.soon3d{margin-top:56px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(70% 90% at 50% 0%,#1b1510,var(--ink-2) 70%);min-height:min(520px,70vh);display:grid;place-items:center;text-align:center;padding:56px 22px;position:relative;overflow:hidden}
+.soon3d::before{content:"";position:absolute;inset:auto 0 0 0;height:55%;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;transform:perspective(500px) rotateX(62deg);transform-origin:50% 100%;opacity:.7;-webkit-mask:linear-gradient(transparent,#000 70%);mask:linear-gradient(transparent,#000 70%)}
+.soon3d > *{position:relative}
+.scene{width:120px;height:120px;perspective:700px;margin:0 auto 46px}
+.cube{width:100%;height:100%;position:relative;transform-style:preserve-3d;animation:cube 9s linear infinite}
+.cube i{position:absolute;inset:0;border:1.5px solid var(--ember);background:rgba(240,122,31,.07);box-shadow:inset 0 0 30px rgba(240,122,31,.18)}
+.cube i:nth-child(1){transform:translateZ(60px)}.cube i:nth-child(2){transform:rotateY(180deg) translateZ(60px)}
+.cube i:nth-child(3){transform:rotateY(90deg) translateZ(60px)}.cube i:nth-child(4){transform:rotateY(-90deg) translateZ(60px)}
+.cube i:nth-child(5){transform:rotateX(90deg) translateZ(60px);background:rgba(240,122,31,.22)}.cube i:nth-child(6){transform:rotateX(-90deg) translateZ(60px)}
+@keyframes cube{from{transform:rotateX(-24deg) rotateY(0)}to{transform:rotateX(-24deg) rotateY(360deg)}}
+.soon3d .st{font-family:var(--f-mono);font-size:12px;color:var(--ember);letter-spacing:.5px}
+.soon3d b{display:block;font-family:var(--f-display);font-weight:700;font-size:clamp(26px,4.6vw,56px);letter-spacing:-.04em;line-height:1.05;margin-top:14px}
+.soon3d p{color:var(--ash);max-width:460px;margin:16px auto 0}
+.rbar{width:min(280px,70%);height:3px;border-radius:3px;background:var(--line);margin:30px auto 0;overflow:hidden}
+.rbar i{display:block;height:100%;width:40%;background:var(--ember);border-radius:3px;animation:rbar 2.2s ease-in-out infinite}
+@keyframes rbar{from{transform:translateX(-100%)}to{transform:translateX(250%)}}
+
