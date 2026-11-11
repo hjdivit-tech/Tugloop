@@ -16,8 +16,6 @@
 </head>
 <body>
 
-<div class="grain" aria-hidden="true"></div>
-<div class="progress" id="progress" aria-hidden="true"></div>
 
 <nav class="nav" id="nav">
  <div class="wrap">
@@ -29,7 +27,7 @@
    <li><a href="3d.html">3d</a></li>
    <li class="m-only"><a href="contact.html">contact</a></li>
   </ul>
-  <a class="btn mag" href="contact.html"><span>Start a project →</span></a>
+  <a class="btn" href="contact.html"><span>Start a project →</span></a>
   <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav">menu</button>
  </div>
 </nav>
@@ -37,17 +35,17 @@
 <section id="iot" class="sec page-top">
  <div class="wrap">
   <div class="head">
-   <div><div class="eyebrow">/iot --arduino --esp32</div><h2 class="h2 split">IoT projects.</h2></div>
+   <div><div class="eyebrow">/iot --arduino --esp32</div><h2 class="h2">IoT projects.</h2></div>
    <p class="sub">Robotics and AI is the day job at college. From a first blinking LED to robots that think for themselves, every kind of Arduino and ESP32 build is on the bench.</p>
   </div>
   <div class="tier"><h3>Advanced projects</h3><span class="mono">$ ls ~/builds --level=advanced</span></div>
   <div class="lab">
-   <article class="lc"><div class="lv v-ss"><div class="wave l"></div><div class="wave f"></div><div class="wave r"></div><div class="core"></div><div class="say" id="say">obstacle left → <b>“turn right”</b></div></div><div class="lt"><h3>Smart Step</h3><p>A smart shoe for visually impaired users. Three ultrasonic sensors watch front, left and right; it speaks directions or beeps faster as obstacles get closer.</p><div class="stack">Arduino · Ultrasonic · DFPlayer</div></div></article>
+   <article class="lc"><div class="lv v-ss"><div class="wave l"></div><div class="wave f"></div><div class="wave r"></div><div class="core"></div><div class="say">obstacle left → <b>“turn right”</b></div></div><div class="lt"><h3>Smart Step</h3><p>A smart shoe for visually impaired users. Three ultrasonic sensors watch front, left and right; it speaks directions or beeps faster as obstacles get closer.</p><div class="stack">Arduino · Ultrasonic · DFPlayer</div></div></article>
    <article class="lc"><div class="lv l-car"><span class="ring"></span><span class="ring"></span><span class="ring"></span><span class="dot"></span><div class="rx">RX · LoRa<br>CRASH <b>●</b><br>13.00N 76.10E</div></div><div class="lt"><h3>Accident Detection Car</h3><p>On impact the car sounds an alarm and radios its GPS location to a receiver box with a screen, buzzer and lights.</p><div class="stack">ESP32 · LoRa · GPS</div></div></article>
    <article class="lc"><div class="lv l-cam"><div class="rec"><i></i>REC</div><div class="xh"></div><div class="fps">ESP32-CAM · live</div></div><div class="lt"><h3>Wi-Fi Camera Car</h3><p>Live video from the car to a laptop while you drive it from your phone.</p><div class="stack">ESP32-CAM · Wi-Fi</div></div></article>
    <article class="lc"><div class="lv l-ir"><svg viewBox="0 0 200 150" aria-hidden="true"><rect x="70" y="92" width="60" height="30" rx="6" fill="#2a2622"/><circle cx="82" cy="126" r="9" fill="#3a3631"/><circle cx="118" cy="126" r="9" fill="#3a3631"/><g class="arm"><rect x="96" y="58" width="8" height="34" rx="3" fill="#4a4540"/><rect x="88" y="44" width="24" height="16" rx="3" fill="#F07A1F"/><circle cx="100" cy="52" r="4" fill="#0A0A09"/></g></svg></div><div class="lt"><h3>IR Robot with Camera</h3><p>A wheeled robot steered by an IR remote, with a servo-mounted camera that pans to look around.</p><div class="stack">Arduino · IR · Servo</div></div></article>
    <article class="lc"><div class="lv l-gest"><div class="hand"></div><div class="road"></div><div class="gcar"><i></i></div><div class="lbl2">tilt → steer</div></div><div class="lt"><h3>Gesture-Controlled Car</h3><p>Tilt your hand and the car follows: an accelerometer glove sends the angle wirelessly to the car.</p><div class="stack">Arduino · MPU6050 · nRF24L01</div></div></article>
-   <article class="lc"><div class="lv l-irr"><div class="gauge"><b></b></div><div class="pct">soil moisture</div><span class="drop"></span><span class="drop" style="left:58%;animation-delay:.4s"></span><span class="drop" style="left:66%;animation-delay:.8s"></span><div class="soil"></div></div><div class="lt"><h3>Smart Irrigation</h3><p>Reads soil moisture and switches the pump on only when the plants are actually dry.</p><div class="stack">Arduino · Soil sensor · Relay pump</div></div></article>
+   <article class="lc"><div class="lv l-irr"><div class="gauge"><b></b></div><div class="pct">soil moisture</div><span class="drop"></span><span class="drop" style="left:58%"></span><span class="drop" style="left:66%"></span><div class="soil"></div></div><div class="lt"><h3>Smart Irrigation</h3><p>Reads soil moisture and switches the pump on only when the plants are actually dry.</p><div class="stack">Arduino · Soil sensor · Relay pump</div></div></article>
   </div>
   <div class="lvl wide"><div class="lh"><span class="mono o">// more advanced builds we take on</span><span class="cnt">34</span></div><div class="cl adv"><span>Obstacle-Avoiding Robot</span><span>Bluetooth RC Car</span><span>Self-Balancing Robot</span><span>Robotic Arm</span><span>Voice-Controlled Robot</span><span>Waste-Sorting Robot Arm</span><span>Surveillance Robot Car</span><span>RFID Door Lock</span><span>Fingerprint Attendance</span><span>Biometric Safe</span><span>Smart Video Doorbell</span><span>Gas Leak Alert (GSM)</span><span>LoRa GPS Tracker</span><span>Child / Pet Safety Tracker</span><span>IoT Weather Station</span><span>Air Quality Monitor</span><span>Water Quality Monitor</span><span>Water Tank Monitor</span><span>Smart Parking System</span><span>Smart Garage Door</span><span>Patient Health Monitor</span><span>Heart-Rate Monitor</span><span>Contactless Temperature Scanner</span><span>Solar Tracker</span><span>Solar Power Monitor</span><span>Smart Energy Meter</span><span>Battery Monitoring System</span><span>AC Fan Speed Control</span><span>Voice-Controlled Curtains</span><span>Telegram-Controlled Home</span><span>Smart Home Hub</span><span>AI Voice Assistant</span><span>Cloud Data Logger (Firebase)</span><span>Automatic Chain Lubrication</span></div></div>
 
